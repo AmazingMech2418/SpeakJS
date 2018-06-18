@@ -23,3 +23,6 @@ z.lang = lang;
 var speakSlow = function(text,speed) {
 speakWithSettings(text,"en",null,1,speed,speed);
 };
+var speakSlowLang = function(text,speed,lang) {
+speakWithSettings(text,lang,null,1,speed,speed);
+};
