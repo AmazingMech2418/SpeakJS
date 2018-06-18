@@ -11,5 +11,15 @@ z.voice = voice;
 z.volume = volume;
 z.rate = rate;
 z.pitch = pitch;
-};
+  speechSynthesis.speak(new SpeechSynthesisUtterance(z));
 
+};
+var speakLang = function(text,lang) {
+var z = (new SpeechSynthesisUtterance(text));
+z.lang = lang;
+    speechSynthesis.speak(new SpeechSynthesisUtterance(z));
+
+};
+var speakSlow = function(text) {
+speakWithSettings(text,"en",null,1,0.5,0.5);
+};
