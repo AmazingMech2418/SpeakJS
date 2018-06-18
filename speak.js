@@ -11,13 +11,13 @@ z.voice = voice;
 z.volume = volume;
 z.rate = rate;
 z.pitch = pitch;
-  speechSynthesis.speak(new SpeechSynthesisUtterance(z));
+  speechSynthesis.speak(z);
 
 };
 var speakLang = function(text,lang) {
 var z = (new SpeechSynthesisUtterance(text));
 z.lang = lang;
-    speechSynthesis.speak(new SpeechSynthesisUtterance(z));
+    speechSynthesis.speak(z);
 
 };
 var speakSlow = function(text) {
