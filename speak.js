@@ -20,6 +20,6 @@ z.lang = lang;
     speechSynthesis.speak(z);
 
 };
-var speakSlow = function(text) {
-speakWithSettings(text,"en",null,1,0.5,0.5);
+var speakSlow = function(text,speed) {
+speakWithSettings(text,"en",null,1,speed,speed);
 };
